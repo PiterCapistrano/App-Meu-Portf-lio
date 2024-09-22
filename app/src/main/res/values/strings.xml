@@ -29,7 +29,13 @@
     <string name="txt_telefone">+55(11)98273–1114</string>
     <string name="txt_email">pitercapistrano@gmail.com</string>
     <string name="txt_github">https://github.com/PiterCapistrano</string>
-    <string name="txt_linkedin">www.linkedin.com/in/piter-capistrano-on
+    <string name="txt_linkedin">www.linkedin.com/in/piter-capistrano-on</string>
+    <string name="txt_barber_shop">Aplicativo Barber Shop</string>
+    <string name="txt_delivery">Aplicativo Delivery</string>
+    <string name="txt_filmes">Aplicativo de Filmes</string>
+    <string name="txt_musica">Aplicativo de Músicas</string>
+    <string name="txt_imc">Aplicativo Calculadora de IMC</string>
+    <string name="txt_whatsapp">Aplicativo Lista WhatsApp</string>
+    <string name="txt_bt_detalhes">Detalhe do Projeto</string>
 
-</string>
 </resources>
