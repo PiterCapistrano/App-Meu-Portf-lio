@@ -26,4 +26,6 @@
 
     <string name="txt_bt_projetos">Projetos</string>
     <string name="txt_bt_contato">Contato</string>
+    <string name="txt_telefone">+55(11)98273–1114</string>
+    <string name="txt_email">pitercapistrano@gmail.com</string>
 </resources>
