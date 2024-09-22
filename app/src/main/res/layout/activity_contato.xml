@@ -29,7 +29,8 @@
         android:textSize="20sp"
         android:textColor="@color/black"
         android:drawablePadding="5dp"
-        android:layout_margin="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
         android:drawableStart="@drawable/ic_phone"
         app:layout_constraintTop_toBottomOf="@+id/toolbar_contato"
         app:layout_constraintStart_toStartOf="parent"
@@ -44,7 +45,7 @@
         android:textSize="20sp"
         android:textColor="@color/black"
         android:drawablePadding="5dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="30dp"
         android:layout_marginStart="20dp"
         android:drawableStart="@drawable/ic_email"
         app:layout_constraintTop_toBottomOf="@+id/telefone"
@@ -52,10 +53,43 @@
         app:layout_constraintEnd_toEndOf="parent"
         />
 
-    <ImageButton
-        android:layout_width="wrap_content"
+    <TextView
+        android:id="@+id/linkedin"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/ic_whats_app"
+        android:text="@string/txt_linkedin"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:drawablePadding="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        android:drawableStart="@drawable/ic_linkedin"
+        app:layout_constraintTop_toBottomOf="@+id/email"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/github"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_github"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:drawablePadding="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        android:drawableStart="@drawable/ic_github"
+        app:layout_constraintTop_toBottomOf="@+id/linkedin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/bt_whatsapp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/logo_whatsapp"
         android:layout_margin="20dp"
         android:background="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
