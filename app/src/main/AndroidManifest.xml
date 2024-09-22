@@ -13,6 +13,12 @@
         android:theme="@style/Theme.MeuPortifólio"
         tools:targetApi="31">
         <activity
+            android:name=".Projetos"
+            android:exported="false" />
+        <activity
+            android:name=".Contato"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
