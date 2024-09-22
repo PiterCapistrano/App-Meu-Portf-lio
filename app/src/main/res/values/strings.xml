@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Meu Portifólio</string>
+    <string name="nome">Piter Capistrano</string>
+    <string name="descricao">
+          Sou um desenvolvedor software com habilidades sólidas em desenvolvimento Android,
+        especializado no uso de Kotlin, Java e Kotlin Compose Multiplatform. Tenho experiência em
+        projetar e implementar interfaces de usuário utilizando Jetpack Compose e XML, além de
+        integrar APIs para fornecer funcionalidades complexas, como atualizações em tempo real e
+        autenticação de usuários. Estou atualmente cursando para adquirir o bacharelado em
+        Engenharia de Software, e possuo diversas certificações em tecnologias relevantes e
+        metodologias ágeis.\n\n\n
+
+       <b>Habilidades:</b>\n\n
+
+        <b><font color='#ff0000'> Desenvolvimento Android:</font></b> Especialista em Kotlin, possui uma profunda compreensão do
+        desenvolvimento Android nativo, entregando aplicativos robustos e eficientes.\n\n
+
+        <b><font color='#ff0000'>Arquitetura de Software:</font></b> Experiente na implementação de arquiteturas modernas como MVVM,
+        Clean Architecture e Jetpack Compose, garantindo código modular e de fácil manutenção.\n\n
+
+        <b><font color='#ff0000'>Testes Automatizados:</font></b> Firme defensor da qualidade do software, Leonardo implementa testes
+        automatizados de unidade e UI para garantir a estabilidade e a confiabilidade de cada
+        aplicativo.
+
+    </string>
+
+    <string name="txt_bt_projetos">Projetos</string>
+    <string name="txt_bt_contato">Contato</string>
+</resources>

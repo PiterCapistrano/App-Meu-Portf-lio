@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+<LinearLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/foto_perfil"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/foto_piter_perfil"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        />
+
+    <TextView
+        android:id="@+id/nome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/nome"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:gravity="center"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_margin="20dp"
+        >
+
+        <TextView
+            android:id="@+id/txtBio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/descricao"
+            android:textSize="14sp"
+            android:layout_margin="20dp"
+            />
+
+    </ScrollView>
+    
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_projetos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_bt_projetos"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:padding="15dp"
+        android:background="@drawable/button"
+        android:layout_marginHorizontal="100dp"
+        android:layout_marginBottom="10dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_contato"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_bt_contato"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:padding="15dp"
+        android:background="@drawable/button"
+        android:layout_marginHorizontal="100dp"
+        android:layout_marginBottom="10dp"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/blue"
+        android:layout_margin="20dp"
+        />
+
+</LinearLayout>
+</androidx.core.widget.NestedScrollView>
