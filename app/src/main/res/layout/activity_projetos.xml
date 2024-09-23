@@ -206,7 +206,7 @@
         android:textSize="22sp"
         android:textStyle="bold"
         android:textColor="@color/black"
-        android:layout_marginTop="35dp"
+        android:layout_marginTop="55dp"
         android:layout_marginStart="150dp"
         app:layout_constraintStart_toEndOf="@+id/img_banco"
         app:layout_constraintTop_toBottomOf="@+id/bt_dt_filmes"
@@ -286,7 +286,7 @@
         android:textSize="22sp"
         android:textStyle="bold"
         android:textColor="@color/black"
-        android:layout_marginTop="35dp"
+        android:layout_marginTop="40dp"
         android:layout_marginStart="150dp"
         app:layout_constraintStart_toEndOf="@+id/img_whatsapp"
         app:layout_constraintTop_toBottomOf="@+id/bt_dt_musica"
@@ -307,6 +307,86 @@
         android:layout_marginTop="10dp"
         app:layout_constraintTop_toBottomOf="@+id/txt_whatsapp"
         app:layout_constraintStart_toEndOf="@+id/img_whatsapp"
+        />
+
+    <ImageView
+        android:id="@+id/img_credit"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/credit"
+        android:layout_margin="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/img_whatsapp"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+    <TextView
+        android:id="@+id/txt_credit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_credit"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="150dp"
+        app:layout_constraintStart_toEndOf="@+id/img_credit"
+        app:layout_constraintTop_toBottomOf="@+id/bt_dt_whatsapp"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_dt_credit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_bt_detalhes"
+        android:textStyle="bold"
+        android:textSize="22dp"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:background="@drawable/button"
+        android:padding="15dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/txt_credit"
+        app:layout_constraintStart_toEndOf="@+id/img_credit"
+        />
+
+    <ImageView
+        android:id="@+id/img_imc"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/imc"
+        android:layout_margin="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/img_credit"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+    <TextView
+        android:id="@+id/txt_imc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_imc"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="150dp"
+        app:layout_constraintStart_toEndOf="@+id/img_imc"
+        app:layout_constraintTop_toBottomOf="@+id/bt_dt_credit"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_dt_imc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_bt_detalhes"
+        android:textStyle="bold"
+        android:textSize="22dp"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:background="@drawable/button"
+        android:padding="15dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/txt_imc"
+        app:layout_constraintStart_toEndOf="@+id/img_imc"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

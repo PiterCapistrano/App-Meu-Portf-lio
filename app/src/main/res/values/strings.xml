@@ -38,6 +38,7 @@
     <string name="txt_musica">Aplicativo de Músicas</string>
     <string name="txt_imc">Aplicativo Calculadora de IMC</string>
     <string name="txt_whatsapp">Aplicativo Lista WhatsApp</string>
+    <string name="txt_credit">Aplicativo de Crédito</string>
     <string name="txt_bt_detalhes">Detalhe do Projeto</string>
 
 </resources>
