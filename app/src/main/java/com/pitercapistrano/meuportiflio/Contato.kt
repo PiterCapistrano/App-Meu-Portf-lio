@@ -56,17 +56,6 @@ class Contato : AppCompatActivity() {
             ligar() // Chama a função para realizar uma ligação telefônica
         }
 
-        binding.email.setOnClickListener {
-            irParaEmail() // Chama a função para enviar um e-mail
-        }
-
-        binding.linkedin.setOnClickListener {
-            irParaLinkedIn() // Chama a função para abrir o perfil no LinkedIn
-        }
-
-        binding.github.setOnClickListener {
-            irParaGithub() // Chama a função para abrir o perfil no GitHub
-        }
     }
 
     // Função para abrir o WhatsApp com o número de telefone fornecido
@@ -115,100 +104,6 @@ class Contato : AppCompatActivity() {
         } catch (e: Exception) {
             // Exibe uma mensagem de erro caso não consiga realizar a ligação
             Toast.makeText(this, "Não foi possível efetuar a ligação!", Toast.LENGTH_LONG).show()
-        }
-    }
-
-    // Função para enviar um e-mail
-    private fun irParaEmail() {
-        val email = "pitercapistrano@gmail.com"
-        val intent = Intent(Intent.ACTION_SENDTO).apply {
-            data = Uri.parse("mailto:$email") // Define o formato de e-mail
-            putExtra(Intent.EXTRA_SUBJECT, "Assunto do Email") // Define o assunto do e-mail
-            putExtra(Intent.EXTRA_TEXT, "Mensagem do corpo do email") // Define o corpo da mensagem
-        }
-
-        try {
-            // Verifica se há algum app capaz de lidar com o e-mail
-            if (intent.resolveActivity(packageManager) != null) {
-                startActivity(intent)
-            } else {
-                // Se não houver app de e-mail, abre a Play Store para baixar o Gmail
-                val playStoreIntent = Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=com.google.android.gm"))
-                startActivity(playStoreIntent)
-            }
-        } catch (e: Exception) {
-            // Exibe uma mensagem de erro caso não consiga abrir o app de e-mail
-            Toast.makeText(this, "Não foi possível abrir o aplicativo de e-mail!", Toast.LENGTH_LONG).show()
-        }
-    }
-
-    // Função para abrir o perfil no LinkedIn
-    private fun irParaLinkedIn(){
-        val linkedInProfile = "https://www.linkedin.com/in/piter-capistrano-on"
-        val packageManager = packageManager
-        val linkedInAppUri = Uri.parse("linkedin://piter-capistrano-on") // URI para o app do LinkedIn
-        val linkedInWebUri = Uri.parse(linkedInProfile) // URL para abrir no navegador
-        val linkedInAppIntent = Intent(Intent.ACTION_VIEW, linkedInAppUri)
-
-        // Verifica se o aplicativo do LinkedIn está instalado
-        val appExists = linkedInAppIntent.resolveActivity(packageManager) != null
-
-        try {
-            if (appExists) {
-                // Se o app estiver instalado, abre o perfil no LinkedIn
-                startActivity(linkedInAppIntent)
-            } else {
-                // Caso contrário, abre o perfil no navegador
-                val webIntent = Intent(Intent.ACTION_VIEW, linkedInWebUri)
-                if (webIntent.resolveActivity(packageManager) != null) {
-                    startActivity(webIntent)
-                } else {
-                    // Se não houver navegador, abre a Play Store para baixar o LinkedIn
-                    val playStoreIntent = Intent(
-                        Intent.ACTION_VIEW,
-                        Uri.parse("https://play.google.com/store/apps/details?id=com.linkedin.android")
-                    )
-                    startActivity(playStoreIntent)
-                }
-            }
-        } catch (e: Exception) {
-            // Exibe uma mensagem de erro caso não consiga abrir o LinkedIn
-            Toast.makeText(this, "Não foi possível abrir o aplicativo LinkedIn!", Toast.LENGTH_LONG).show()
-        }
-    }
-
-    // Função para abrir o perfil no GitHub
-    private fun irParaGithub(){
-        val perfilGithub = "https://github.com/PiterCapistrano"
-        val packageManager = packageManager
-        val githubAppUri = Uri.parse("github://user?username=PiterCapistrano") // URI para o app do GitHub
-        val githubWebUri = Uri.parse(perfilGithub) // URL para abrir no navegador
-        val githubAppIntent = Intent(Intent.ACTION_VIEW, githubAppUri)
-
-        // Verifica se o aplicativo do GitHub está instalado
-        val appExists = githubAppIntent.resolveActivity(packageManager) != null
-
-        try {
-            if (appExists) {
-                // Se o app estiver instalado, abre o perfil no GitHub
-                startActivity(githubAppIntent)
-            } else {
-                // Caso contrário, abre o perfil no navegador
-                val webIntent = Intent(Intent.ACTION_VIEW, githubWebUri)
-                if (webIntent.resolveActivity(packageManager) != null) {
-                    startActivity(webIntent)
-                } else {
-                    // Se não houver navegador, abre a Play Store para baixar o GitHub
-                    val playStoreIntent = Intent(
-                        Intent.ACTION_VIEW,
-                        Uri.parse("https://play.google.com/store/apps/details?id=com.github.android")
-                    )
-                    startActivity(playStoreIntent)
-                }
-            }
-        } catch (e: Exception) {
-            // Exibe uma mensagem de erro caso não consiga abrir o GitHub
-            Toast.makeText(this, "Não foi possível abrir o aplicativo Github!", Toast.LENGTH_LONG).show()
         }
     }
 }

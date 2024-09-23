@@ -5,7 +5,8 @@
     <uses-feature
         android:name="android.hardware.telephony"
         android:required="true" />
-    <uses-permission android:name="android.permission.CALL_PHONE"/>
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
 
     <application
         android:allowBackup="true"
@@ -18,15 +19,16 @@
         android:theme="@style/Theme.MeuPortifólio"
         tools:targetApi="31">
         <activity
+            android:name=".DetalhesFPCalculator"
+            android:exported="false" />
+        <activity
             android:name=".Projetos"
             android:exported="false"
-            android:theme="@style/Theme.TelaDeProjetos"
-            />
+            android:theme="@style/Theme.TelaDeProjetos" />
         <activity
             android:name=".Contato"
             android:exported="false"
-            android:theme="@style/Theme.TelaDeContato"
-            />
+            android:theme="@style/Theme.TelaDeContato" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
