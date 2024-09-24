@@ -18,7 +18,7 @@
         <b><font color='#ff0000'>Arquitetura de Software:</font></b> <font color='#000000'>Experiente na implementação de arquiteturas modernas como MVVM,
         Clean Architecture e Jetpack Compose, garantindo código modular e de fácil manutenção.\n\n</font>
 
-        <b><font color='#ff0000'>Testes Automatizados:</font></b> <font color='#000000'>Firme defensor da qualidade do software, Leonardo implementa testes
+        <b><font color='#ff0000'>Testes Automatizados:</font></b> <font color='#000000'>Firme defensor da qualidade do software, implementando testes
         automatizados de unidade e UI para garantir a estabilidade e a confiabilidade de cada
         aplicativo.\n\n</font>
 
@@ -39,6 +39,46 @@
     <string name="txt_imc">Aplicativo Calculadora de IMC</string>
     <string name="txt_whatsapp">Aplicativo Lista WhatsApp</string>
     <string name="txt_credit">Aplicativo de Crédito</string>
-    <string name="txt_bt_detalhes">Detalhe do Projeto</string>
+    <string name="txt_bt_detalhes">Detalhes do Projeto</string>
+    <string name="txt_detalhes_fpcalculator">Detalhes do Projeto F.P.Calculator</string>
+
+    <string name="txt_descrição_fpcalculator">
+
+        <b><font color='#000000'> Aplicativo Mobile Criado Utilizando Kotlin, XML, SQLite e FireBase.</font></b>\n\n\n
+
+
+        <b><font color='#000000'>Projeto: FPCalculator. Mar 2024 – Presente</font></b>\n\n
+
+<font color='#000000'>Desenvolvi um aplicativo para Engenheiros Civis calcularem a profundidade e a capacidade de
+carga das estacas de fundação, com base nos resultados dos testes de SPT (Standard
+Penetration Test) do solo.\n\n
+
+<b>Principais Responsabilidades:</b>\n\n
+
+• Desenvolvi o back-end usando Kotlin, implementando algoritmos robustos para
+cálculos precisos com base nos resultados dos testes de SPT.\n\n
+
+• Desenhei a UI com XML, garantindo uma experiência amigável para o usuário.\n\n
+
+• Integrei o Google Sign-In para autenticação de usuário.\n\n
+
+• Utilizei Firestore Database e Firebase Authentication para registro e autenticação
+de usuários.\n\n
+
+• Empreguei SQLite para armazenar e gerenciar localmente os dados dos projetos
+calculados pelo aplicativo.\n\n
+
+• Conduzi testes rigorosos para garantir a precisão e confiabilidade dos cálculos.\n\n
+
+• Implementei as melhores práticas em segurança e gerenciamento de dados.\n\n
+
+• Colaborei com profissionais de engenharia civil para validar a funcionalidade e
+precisão do aplicativo.\n\n
+
+• Utilizei a IDE Android Studio para desenvolvimento e depuração.\n\n
+
+    • Implementei tratamento de erros e logging para interação contínua do usuário.\n\n</font>
+
+    </string>
 
 </resources>
