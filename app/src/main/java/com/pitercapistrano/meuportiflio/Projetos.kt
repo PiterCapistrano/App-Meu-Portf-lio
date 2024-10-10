@@ -33,6 +33,12 @@ class Projetos : AppCompatActivity() {
             startActivity(intent)
         }
 
+        binding.btDtLojaVirtual.setOnClickListener {
+            val diretorio = "https://github.com/PiterCapistrano/Loja-Virtual-Client"
+            val intent = Intent(Intent.ACTION_VIEW, Uri.parse(diretorio))
+            startActivity(intent)
+        }
+
         binding.btDtBarberShop.setOnClickListener {
             val diretorio = "https://github.com/PiterCapistrano/BarberShopApp"
             val intent = Intent(Intent.ACTION_VIEW, Uri.parse(diretorio))
